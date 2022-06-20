@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
+import { Camera } from '@awesome-cordova-plugins/camera/ngx';
 import { CameraPageRoutingModule } from './camera-routing.module';
 
 import { CameraPage } from './camera.page';
@@ -15,6 +15,7 @@ import { CameraPage } from './camera.page';
     IonicModule,
     CameraPageRoutingModule
   ],
-  declarations: [CameraPage]
+  declarations: [CameraPage],
+  providers: [Camera]
 })
 export class CameraPageModule {}

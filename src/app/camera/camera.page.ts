@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+
+import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
 
 @Component({
   selector: 'app-folder',
@@ -7,13 +8,32 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./camera.page.scss'],
 })
 export class CameraPage implements OnInit {
-  public camera: string;
+  
+  public image: string;
 
-
-  constructor(private activatedRoute: ActivatedRoute) { console.log("camera constructor"); }
+  constructor(private camera: Camera) { }
 
   ngOnInit() {
-    this.camera = this.activatedRoute.snapshot.paramMap.get('id');
+    console.log("camera ngOnInit");
   }
 
+    takepic(){
+      const options: CameraOptions = {
+        quality: 100,
+        destinationType: this.camera.DestinationType.FILE_URI,
+        encodingType: this.camera.EncodingType.JPEG,
+        mediaType: this.camera.MediaType.PICTURE
+      }
+      
+      this.camera.getPicture(options).then((imageData) => {
+       // imageData is either a base64 encoded string or a file URI
+       // If it's base64 (DATA_URL):
+       console.log("success takepic()");
+       let base64Image = 'data:image/jpeg;base64,' + imageData;
+      this.image = base64Image;
+      }, (err) => {
+       // Handle error
+       alert(err);
+      });
+    }
 }
