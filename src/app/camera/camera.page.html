@@ -24,15 +24,16 @@
       }
     </script>
   </div>
-  <!---
-  <ion-grid>
+  
+  <ion-grid *ngIf="display">
     <ion-row>
-    <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
-      <ion-img [src]="photo.webviewPath" (click)="showActionSheet(photo, position)"></ion-img>
+    <ion-col size="6">
+      <ion-img [src]="image" [alt]="alt"></ion-img>
     </ion-col>
     </ion-row>
   </ion-grid>
-  --->
+
+  
 
   <ion-fab vertical="bottom" horizontal="center" slot="fixed">
     <ion-fab-button (click)="takepic()">
