@@ -24,6 +24,7 @@ export class AdditionPage implements OnInit {
 
   ngOnInit() {
     console.log("AdditionPage ngOnInit");
+    console.log(Calculator.PI);
   }
 
   add() {
