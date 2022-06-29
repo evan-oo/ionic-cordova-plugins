@@ -10,6 +10,7 @@ export class AppComponent {
     { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
     { title: 'Hello World', url: '/folder/HelloWorld', icon: 'planet'},
     { title: 'Camera', url: '/camera', icon: 'camera'},
+    { title: 'Calculator', url: '/calculator', icon: 'calculator'},
     { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
     { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
     { title: 'Trash', url: '/folder/Trash', icon: 'trash' },

@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'camera',
     loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
+  },
+  {
+    path: 'calculator',
+    loadChildren: () => import('./addition/addition.module').then( m => m.AdditionPageModule)
   }
 ];
 

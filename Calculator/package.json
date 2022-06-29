@@ -1,0 +1,17 @@
+{
+  "name": "cordova-custom-plugin-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "cordova-custom-plugin-calculator",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC"
+}
