@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
   },
   {
+    path: 'bluetooth',
+    loadChildren: () => import('./bluetooth/bluetooth.module').then( m => m.BluetoothPageModule)
+  },
+  {
     path: 'calculator',
     loadChildren: () => import('./addition/addition.module').then( m => m.AdditionPageModule)
   }

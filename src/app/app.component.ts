@@ -11,6 +11,7 @@ export class AppComponent {
     { title: 'Hello World', url: '/folder/HelloWorld', icon: 'planet'},
     { title: 'Camera', url: '/camera', icon: 'camera'},
     { title: 'Calculator', url: '/calculator', icon: 'calculator'},
+    { title: 'Bluetooth', url: '/bluetooth', icon: 'bluetooth'},
     { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
     { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
     { title: 'Trash', url: '/folder/Trash', icon: 'trash' },

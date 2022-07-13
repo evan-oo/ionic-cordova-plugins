@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute } from '@angular/router';
 //import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
 
 declare let Calculator: any;
