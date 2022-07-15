@@ -20,9 +20,24 @@
   </div>
 
   <div id="test">
-    <ion-button shape="round" fill="outline" (click)="startScan()">startScan</ion-button>
-    <ion-button shape="round" fill="outline" (click)="startScanWithOptions()">startScanWithOptions</ion-button>
-    <ion-button shape="round" fill="outline" (click)="stopScan()">stopScan</ion-button>
-    <ion-button shape="round" fill="outline" (click)="setPin()">setPin</ion-button>
+    <ion-grid>
+      <ion-row>
+        
+        <ion-button shape="round" fill="outline" (click)="startScan()">startScan</ion-button>
+        <ion-button shape="round" fill="outline" (click)="startScanWithOptions()">startScanWithOptions</ion-button>
+        <ion-button shape="round" fill="outline" (click)="stopScan()">stopScan</ion-button>
+        <ion-button shape="round" fill="outline" (click)="setPin()">setPin</ion-button>
+        <ion-button shape="round" fill="outline" (click)="connectToPIE()">Connect</ion-button>
+        <ion-button shape="round" fill="outline" (click)="disconnect()">Disconnect</ion-button>
+        <ion-button shape="round" fill="outline" (click)="read()">Read</ion-button>
+        <ion-button shape="round" fill="outline" (click)="write()">Write</ion-button>
+        <ion-button shape="round" fill="outline" (click)="startNotification()">startNoti</ion-button>
+        <ion-button shape="round" fill="outline" (click)="stopNotification()">stopNoti</ion-button>
+        <ion-button shape="round" fill="outline" (click)="isConnected()">isConnected</ion-button>
+      </ion-row>  
+     
+       
+      
+    </ion-grid>
   </div>
 </ion-content>

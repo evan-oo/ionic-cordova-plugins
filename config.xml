@@ -95,6 +95,11 @@
         <config-file parent="NSCameraUsageDescription" platform="ios" target="*-Info.plist">
             <string>You can take photos</string>
         </config-file>
+        <config-file parent="UIBackgroundModes" target="*-Info.plist">
+            <array>
+                <string>bluetooth-central</string>
+            </array>
+        </config-file>
     </platform>
     <plugin name="cordova-plugin-statusbar" spec="2.4.2" />
     <plugin name="cordova-plugin-device" spec="2.0.2" />
